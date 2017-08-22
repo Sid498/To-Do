@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvDateTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Date Title"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+
+    <TextView
+        android:id="@+id/tvTaskTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Title"
+        android:layout_below="@id/tvDateTitle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/tvTaskDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Description"
+        android:layout_below="@id/tvTaskTitle"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/tvTargetDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Target Date"
+        android:layout_below="@id/tvTaskDescription"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:id="@+id/ivIncompleteTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/incomplete"
+        android:layout_alignBottom="@+id/tvTaskDescription"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="14dp" />
+
+</RelativeLayout>
